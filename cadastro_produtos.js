@@ -6,6 +6,9 @@ module.exports = class CadastroProdutos {
     inserir(produto){
         this.produtos.push(produto);
     }
+    deletar(indice){
+        this.produtos.splice(indice, 1)
+    }
     
     listar() {
         return this.produtos;
